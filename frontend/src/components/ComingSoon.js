@@ -226,7 +226,7 @@ const ComingSoon = () => {
               }}
               onFocus={(e) => {
                 e.target.style.borderColor = 'var(--accent-primary)';
-                e.target.style.boxShadow = '0 0 0 4px rgba(218, 255, 1, 0.1)';
+                e.target.style.boxShadow = '0 0 0 4px rgba(0, 240, 255, 0.1)';
               }}
               onBlur={(e) => {
                 e.target.style.borderColor = 'var(--border-primary)';
