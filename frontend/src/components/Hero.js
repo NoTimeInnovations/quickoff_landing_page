@@ -132,7 +132,7 @@ const Hero = () => {
               background: 'rgba(218, 255, 1, 0.1)',
               padding: '12px 20px',
               borderRadius: '24px',
-              border: '1px solid rgba(218, 255, 1, 0.2)'
+              border: '1px solid rgba(0, 240, 255, 0.2)'
             }}>
               <span style={{
                 fontSize: '24px',
