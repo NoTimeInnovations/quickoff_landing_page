@@ -56,30 +56,36 @@ const Features = () => {
         {/* Section Header */}
         <div style={{
           textAlign: 'center',
-          marginBottom: '80px'
+          marginBottom: '100px'
         }}>
           <h2 style={{
-            fontSize: '48px',
+            fontSize: '56px',
             fontWeight: '700',
             lineHeight: '1.1',
             color: 'var(--text-primary)',
-            marginBottom: '16px',
+            marginBottom: '24px',
             letterSpacing: '-0.015em'
           }} className="display-md">
             Everything You Need to Drive Sales
           </h2>
           <p style={{
-            fontSize: '18px',
+            fontSize: '20px',
             color: 'var(--text-secondary)',
-            maxWidth: '600px',
-            margin: '0 auto'
+            maxWidth: '800px',
+            margin: '0 auto',
+            lineHeight: '1.6'
           }}>
             Powerful features designed specifically for Shopify stores. Create urgency, boost conversions, and increase revenue with smart timer placement.
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="card-grid-3" style={{ marginBottom: '80px' }}>
+        {/* Features Grid - Maximum Space Usage */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+          gap: '40px',
+          marginBottom: '120px'
+        }}>
           {features.map((feature, index) => (
             <div key={index} className="feature-card animate-fade-in">
               {/* Feature Icon */}
