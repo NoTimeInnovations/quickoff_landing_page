@@ -92,7 +92,7 @@ const ComingSoon = () => {
           {upcomingFeatures.map((feature, index) => (
             <div key={index} style={{
               background: 'var(--bg-secondary)',
-              border: feature.priority === 'high' ? '1px solid rgba(218, 255, 1, 0.3)' : '1px solid var(--border-subtle)',
+              border: feature.priority === 'high' ? '1px solid rgba(0, 240, 255, 0.3)' : '1px solid var(--border-subtle)',
               borderRadius: '16px',
               padding: '32px',
               position: 'relative',
