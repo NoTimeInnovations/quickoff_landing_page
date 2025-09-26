@@ -49,7 +49,7 @@ const Features = () => {
 
   return (
     <section id="features" style={{
-      padding: '120px 0',
+      padding: '120px 0 80px',
       background: 'var(--bg-primary)'
     }}>
       <div className="container">
