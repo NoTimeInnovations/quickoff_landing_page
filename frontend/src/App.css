@@ -16,11 +16,11 @@
   --border-primary: rgb(63, 63, 63);
   --border-subtle: rgba(255, 255, 255, 0.1);
   
-  /* MAIN ACCENT - Signature Neon Green */
-  --accent-primary: rgb(218, 255, 1);
-  --accent-hover: rgb(166, 190, 21);
-  --accent-pressed: rgb(134, 155, 16);
-  --accent-bg: rgba(218, 255, 1, 0.1);
+  /* MAIN ACCENT - Electric Blue */
+  --accent-primary: rgb(0, 240, 255);  /* Electric blue #00f0ff */
+  --accent-hover: rgb(0, 200, 220);    /* Hover state */
+  --accent-pressed: rgb(0, 160, 180);  /* Active state */
+  --accent-bg: rgba(0, 240, 255, 0.1); /* Subtle backgrounds */
   
   /* Secondary Accent */
   --accent-purple: rgb(127, 74, 142);
