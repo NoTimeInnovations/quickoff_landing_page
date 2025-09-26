@@ -43,7 +43,7 @@ const TimerExamples = () => {
       padding: size === 'small' ? '12px' : '20px',
       textAlign: 'center',
       border: '1px solid var(--accent-primary)',
-      boxShadow: '0 0 20px rgba(218, 255, 1, 0.2)'
+      boxShadow: '0 0 20px rgba(0, 240, 255, 0.2)'
     }}>
       <div style={{
         fontSize: size === 'small' ? '10px' : '14px',
