@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Clock, Zap, Target } from 'lucide-react';
+import TimerExamples from './TimerExamples';
 
 const Hero = () => {
   return (
