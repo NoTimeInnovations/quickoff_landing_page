@@ -1,0 +1,264 @@
+import React from 'react';
+import { ArrowRight, Clock, Zap, Target } from 'lucide-react';
+
+const Hero = () => {
+  return (
+    <section style={{
+      padding: '120px 0 80px',
+      background: 'var(--bg-primary)',
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
+      {/* Background gradient effect */}
+      <div style={{
+        position: 'absolute',
+        top: '0',
+        left: '50%',
+        width: '800px',
+        height: '600px',
+        background: 'radial-gradient(circle, rgba(218, 255, 1, 0.03) 0%, transparent 70%)',
+        transform: 'translateX(-50%)',
+        pointerEvents: 'none'
+      }} />
+      
+      <div className="container">
+        <div style={{
+          textAlign: 'left',
+          maxWidth: '800px',
+          margin: '0 auto',
+          position: 'relative'
+        }}>
+          {/* Badge */}
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            background: 'var(--accent-bg)',
+            border: '1px solid rgba(218, 255, 1, 0.2)',
+            borderRadius: '24px',
+            padding: '8px 16px',
+            marginBottom: '24px',
+            fontSize: '14px',
+            fontWeight: '500',
+            color: 'var(--accent-primary)'
+          }}>
+            <Zap size={16} />
+            Create Timers in Just 2 Taps
+          </div>
+
+          {/* Main Headline */}
+          <h1 style={{
+            fontSize: '60px',
+            fontWeight: '700',
+            lineHeight: '1.0',
+            letterSpacing: '-0.02em',
+            color: 'var(--text-primary)',
+            marginBottom: '24px'
+          }} className="display-lg">
+            Boost Your Shopify Sales with{' '}
+            <span style={{ color: 'var(--accent-primary)' }}>
+              Smart Timers
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p style={{
+            fontSize: '20px',
+            lineHeight: '1.6',
+            color: 'var(--text-secondary)',
+            marginBottom: '40px',
+            maxWidth: '600px'
+          }}>
+            Create urgency and drive conversions with product card timers that automatically sync with your Shopify discounts. No complex setup, no coding required.
+          </p>
+
+          {/* CTA Buttons */}
+          <div style={{
+            display: 'flex',
+            gap: '16px',
+            marginBottom: '64px',
+            flexWrap: 'wrap'
+          }}>
+            <a 
+              href="#" 
+              className="btn-primary"
+              style={{ fontSize: '18px', padding: '20px 40px' }}
+            >
+              Install from Shopify App Store
+              <ArrowRight size={20} />
+            </a>
+            <a href="#features" className="btn-secondary">
+              See Features
+            </a>
+          </div>
+
+          {/* Stats */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+            gap: '32px',
+            maxWidth: '500px'
+          }}>
+            <div>
+              <div style={{
+                fontSize: '32px',
+                fontWeight: '700',
+                color: 'var(--accent-primary)',
+                marginBottom: '4px'
+              }}>
+                2-Tap
+              </div>
+              <div style={{
+                fontSize: '14px',
+                color: 'var(--text-muted)'
+              }}>
+                Setup Process
+              </div>
+            </div>
+            <div>
+              <div style={{
+                fontSize: '32px',
+                fontWeight: '700',
+                color: 'var(--accent-primary)',
+                marginBottom: '4px'
+              }}>
+                Auto-Sync
+              </div>
+              <div style={{
+                fontSize: '14px',
+                color: 'var(--text-muted)'
+              }}>
+                With Discounts
+              </div>
+            </div>
+            <div>
+              <div style={{
+                fontSize: '32px',
+                fontWeight: '700',
+                color: 'var(--accent-primary)',
+                marginBottom: '4px'
+              }}>
+              Zero-Code
+              </div>
+              <div style={{
+                fontSize: '14px',
+                color: 'var(--text-muted)'
+              }}>
+                Implementation
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Visual */}
+        <div style={{
+          marginTop: '80px',
+          position: 'relative'
+        }}>
+          <div style={{
+            background: 'var(--bg-secondary)',
+            border: '1px solid var(--border-subtle)',
+            borderRadius: '16px',
+            padding: '32px',
+            maxWidth: '600px',
+            margin: '0 auto',
+            position: 'relative'
+          }} className="feature-card">
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '16px',
+              marginBottom: '24px'
+            }}>
+              <div style={{
+                width: '48px',
+                height: '48px',
+                background: 'var(--accent-primary)',
+                borderRadius: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <Target size={24} color="var(--bg-primary)" />
+              </div>
+              <div>
+                <h3 style={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                  color: 'var(--text-primary)',
+                  margin: '0 0 4px 0'
+                }}>
+                  Product Card Timer
+                </h3>
+                <p style={{
+                  fontSize: '14px',
+                  color: 'var(--text-muted)',
+                  margin: '0'
+                }}>
+                  Our signature feature
+                </p>
+              </div>
+            </div>
+
+            {/* Mock Timer Display */}
+            <div style={{
+              background: 'var(--bg-tertiary)',
+              borderRadius: '12px',
+              padding: '24px',
+              textAlign: 'center'
+            }}>
+              <div style={{
+                fontSize: '14px',
+                color: 'var(--text-muted)',
+                marginBottom: '8px'
+              }}>
+                Flash Sale Ends In
+              </div>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '16px',
+                marginBottom: '16px'
+              }}>
+                {['23', '59', '45'].map((value, index) => (
+                  <div key={index} style={{
+                    background: 'var(--accent-primary)',
+                    color: 'var(--bg-primary)',
+                    borderRadius: '8px',
+                    padding: '12px 16px',
+                    fontSize: '24px',
+                    fontWeight: '700',
+                    minWidth: '60px'
+                  }}>
+                    {value}
+                  </div>
+                ))}
+              </div>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '16px',
+                fontSize: '12px',
+                color: 'var(--text-muted)'
+              }}>
+                <span>HOURS</span>
+                <span>MINS</span>
+                <span>SECS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 36px !important;
+          }
+        }
+      `}</style>
+    </section>
+  );
+};
+
+export default Hero;
