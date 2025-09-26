@@ -17,7 +17,7 @@ const Hero = () => {
         left: '50%',
         width: '800px',
         height: '600px',
-        background: 'radial-gradient(circle, rgba(218, 255, 1, 0.03) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(0, 240, 255, 0.03) 0%, transparent 70%)',
         transform: 'translateX(-50%)',
         pointerEvents: 'none'
       }} />
