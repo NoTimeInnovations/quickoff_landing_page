@@ -87,25 +87,46 @@ const Features = () => {
           marginBottom: '120px'
         }}>
           {features.map((feature, index) => (
-            <div key={index} className="feature-card animate-fade-in">
+            <div key={index} style={{
+              background: 'var(--bg-secondary)',
+              border: feature.highlight ? '2px solid var(--accent-primary)' : '1px solid var(--border-subtle)',
+              borderRadius: '20px',
+              padding: '48px 40px',
+              transition: 'all 0.3s ease',
+              position: 'relative',
+              overflow: 'hidden',
+              minHeight: '280px'
+            }} className="hover-lift">
+              {/* Signature top accent border for highlighted features */}
+              {feature.highlight && (
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: '4px',
+                  background: 'var(--accent-primary)'
+                }} />
+              )}
+
               {/* Feature Icon */}
               <div style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '16px',
-                marginBottom: '24px'
+                gap: '20px',
+                marginBottom: '32px'
               }}>
                 <div style={{
-                  width: '56px',
-                  height: '56px',
+                  width: '72px',
+                  height: '72px',
                   background: feature.highlight ? 'var(--accent-primary)' : 'var(--bg-tertiary)',
-                  borderRadius: '12px',
+                  borderRadius: '16px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
                   <feature.icon 
-                    size={28} 
+                    size={36} 
                     color={feature.highlight ? 'var(--bg-primary)' : 'var(--accent-primary)'} 
                     strokeWidth={2}
                   />
@@ -114,11 +135,11 @@ const Features = () => {
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '8px',
-                    marginBottom: '4px'
+                    gap: '12px',
+                    marginBottom: '8px'
                   }}>
                     <h3 style={{
-                      fontSize: '20px',
+                      fontSize: '24px',
                       fontWeight: '600',
                       color: 'var(--text-primary)',
                       margin: '0'
@@ -129,10 +150,10 @@ const Features = () => {
                       <span style={{
                         background: 'var(--accent-primary)',
                         color: 'var(--bg-primary)',
-                        fontSize: '10px',
+                        fontSize: '12px',
                         fontWeight: '600',
-                        padding: '2px 6px',
-                        borderRadius: '4px',
+                        padding: '4px 8px',
+                        borderRadius: '6px',
                         textTransform: 'uppercase'
                       }}>
                         Featured
@@ -140,9 +161,9 @@ const Features = () => {
                     )}
                   </div>
                   <div style={{
-                    fontSize: '12px',
+                    fontSize: '14px',
                     color: 'var(--accent-primary)',
-                    fontWeight: '500'
+                    fontWeight: '600'
                   }}>
                     {feature.status}
                   </div>
@@ -151,8 +172,8 @@ const Features = () => {
 
               {/* Feature Description */}
               <p style={{
-                fontSize: '16px',
-                lineHeight: '1.6',
+                fontSize: '18px',
+                lineHeight: '1.7',
                 color: 'var(--text-secondary)',
                 margin: '0'
               }}>
