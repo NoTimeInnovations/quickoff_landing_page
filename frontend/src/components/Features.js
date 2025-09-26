@@ -183,13 +183,13 @@ const Features = () => {
           ))}
         </div>
 
-        {/* Call-to-Action */}
+        {/* Call-to-Action - Expanded */}
         <div style={{
           textAlign: 'center',
           background: 'var(--bg-secondary)',
-          border: '1px solid var(--border-subtle)',
-          borderRadius: '16px',
-          padding: '48px 32px',
+          border: '2px solid var(--border-subtle)',
+          borderRadius: '20px',
+          padding: '80px 48px',
           position: 'relative',
           overflow: 'hidden'
         }}>
@@ -199,31 +199,32 @@ const Features = () => {
             top: 0,
             left: 0,
             right: 0,
-            height: '2px',
+            height: '4px',
             background: 'var(--accent-primary)'
           }} />
 
           <h3 style={{
-            fontSize: '32px',
+            fontSize: '40px',
             fontWeight: '600',
             color: 'var(--text-primary)',
-            marginBottom: '16px',
+            marginBottom: '24px',
             letterSpacing: '-0.01em'
           }}>
             Ready to Boost Your Sales?
           </h3>
           <p style={{
-            fontSize: '18px',
+            fontSize: '20px',
             color: 'var(--text-secondary)',
-            marginBottom: '32px',
-            maxWidth: '500px',
-            margin: '0 auto 32px auto'
+            marginBottom: '48px',
+            maxWidth: '700px',
+            margin: '0 auto 48px auto',
+            lineHeight: '1.6'
           }}>
-            Join thousands of Shopify stores using QuickOff to create urgency and drive more conversions.
+            Join thousands of Shopify stores using QuickOff to create urgency and drive more conversions. Start your 7-day free trial today.
           </p>
           <a href="#" className="btn-primary" style={{
-            fontSize: '18px',
-            padding: '20px 40px'
+            fontSize: '20px',
+            padding: '24px 48px'
           }}>
             Get Started Now
           </a>
