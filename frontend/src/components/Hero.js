@@ -93,85 +93,83 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Stats - Using Maximum Space */}
+          {/* Stats - Compact One Line */}
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             gap: '48px',
-            width: '100%',
-            maxWidth: '800px'
+            flexWrap: 'wrap',
+            marginBottom: '32px'
           }}>
-            <div style={{ textAlign: 'center', padding: '24px' }}>
-              <div style={{
-                fontSize: '48px',
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '8px',
+              background: 'rgba(218, 255, 1, 0.1)',
+              padding: '12px 20px',
+              borderRadius: '24px',
+              border: '1px solid rgba(218, 255, 1, 0.2)'
+            }}>
+              <span style={{
+                fontSize: '24px',
                 fontWeight: '700',
-                color: 'var(--accent-primary)',
-                marginBottom: '12px'
+                color: 'var(--accent-primary)'
               }}>
                 2-Tap
-              </div>
-              <div style={{
-                fontSize: '16px',
-                color: 'var(--text-secondary)',
-                fontWeight: '500'
-              }}>
-                Setup Process
-              </div>
-              <div style={{
+              </span>
+              <span style={{
                 fontSize: '14px',
-                color: 'var(--text-muted)',
-                marginTop: '8px'
+                color: 'var(--text-secondary)'
               }}>
-                Connect & Create in seconds
-              </div>
+                Setup
+              </span>
             </div>
-            <div style={{ textAlign: 'center', padding: '24px' }}>
-              <div style={{
-                fontSize: '48px',
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '8px',
+              background: 'rgba(218, 255, 1, 0.1)',
+              padding: '12px 20px',
+              borderRadius: '24px',
+              border: '1px solid rgba(218, 255, 1, 0.2)'
+            }}>
+              <span style={{
+                fontSize: '24px',
                 fontWeight: '700',
-                color: 'var(--accent-primary)',
-                marginBottom: '12px'
+                color: 'var(--accent-primary)'
               }}>
                 Auto-Sync
-              </div>
-              <div style={{
-                fontSize: '16px',
-                color: 'var(--text-secondary)',
-                fontWeight: '500'
-              }}>
-                With Discounts
-              </div>
-              <div style={{
+              </span>
+              <span style={{
                 fontSize: '14px',
-                color: 'var(--text-muted)',
-                marginTop: '8px'
+                color: 'var(--text-secondary)'
               }}>
-                Fetches all discount details
-              </div>
+                Discounts
+              </span>
             </div>
-            <div style={{ textAlign: 'center', padding: '24px' }}>
-              <div style={{
-                fontSize: '48px',
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '8px',
+              background: 'rgba(218, 255, 1, 0.1)',
+              padding: '12px 20px',
+              borderRadius: '24px',
+              border: '1px solid rgba(218, 255, 1, 0.2)'
+            }}>
+              <span style={{
+                fontSize: '24px',
                 fontWeight: '700',
-                color: 'var(--accent-primary)',
-                marginBottom: '12px'
+                color: 'var(--accent-primary)'
               }}>
                 Zero-Code
-              </div>
-              <div style={{
-                fontSize: '16px',
-                color: 'var(--text-secondary)',
-                fontWeight: '500'
-              }}>
-                Implementation
-              </div>
-              <div style={{
+              </span>
+              <span style={{
                 fontSize: '14px',
-                color: 'var(--text-muted)',
-                marginTop: '8px'
+                color: 'var(--text-secondary)'
               }}>
-                No technical knowledge needed
-              </div>
+                Required
+              </span>
             </div>
           </div>
         </div>
