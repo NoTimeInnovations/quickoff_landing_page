@@ -50,7 +50,7 @@ const ComingSoon = () => {
             alignItems: 'center',
             gap: '8px',
             background: 'var(--accent-bg)',
-            border: '1px solid rgba(218, 255, 1, 0.2)',
+            border: '1px solid rgba(0, 240, 255, 0.2)',
             borderRadius: '24px',
             padding: '8px 16px',
             marginBottom: '24px',
