@@ -92,59 +92,84 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Stats */}
+          {/* Stats - Using Maximum Space */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-            gap: '32px',
-            maxWidth: '500px'
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '48px',
+            width: '100%',
+            maxWidth: '800px'
           }}>
-            <div>
+            <div style={{ textAlign: 'center', padding: '24px' }}>
               <div style={{
-                fontSize: '32px',
+                fontSize: '48px',
                 fontWeight: '700',
                 color: 'var(--accent-primary)',
-                marginBottom: '4px'
+                marginBottom: '12px'
               }}>
                 2-Tap
               </div>
               <div style={{
-                fontSize: '14px',
-                color: 'var(--text-muted)'
+                fontSize: '16px',
+                color: 'var(--text-secondary)',
+                fontWeight: '500'
               }}>
                 Setup Process
               </div>
-            </div>
-            <div>
               <div style={{
-                fontSize: '32px',
+                fontSize: '14px',
+                color: 'var(--text-muted)',
+                marginTop: '8px'
+              }}>
+                Connect & Create in seconds
+              </div>
+            </div>
+            <div style={{ textAlign: 'center', padding: '24px' }}>
+              <div style={{
+                fontSize: '48px',
                 fontWeight: '700',
                 color: 'var(--accent-primary)',
-                marginBottom: '4px'
+                marginBottom: '12px'
               }}>
                 Auto-Sync
               </div>
               <div style={{
-                fontSize: '14px',
-                color: 'var(--text-muted)'
+                fontSize: '16px',
+                color: 'var(--text-secondary)',
+                fontWeight: '500'
               }}>
                 With Discounts
               </div>
-            </div>
-            <div>
               <div style={{
-                fontSize: '32px',
+                fontSize: '14px',
+                color: 'var(--text-muted)',
+                marginTop: '8px'
+              }}>
+                Fetches all discount details
+              </div>
+            </div>
+            <div style={{ textAlign: 'center', padding: '24px' }}>
+              <div style={{
+                fontSize: '48px',
                 fontWeight: '700',
                 color: 'var(--accent-primary)',
-                marginBottom: '4px'
+                marginBottom: '12px'
               }}>
-              Zero-Code
+                Zero-Code
+              </div>
+              <div style={{
+                fontSize: '16px',
+                color: 'var(--text-secondary)',
+                fontWeight: '500'
+              }}>
+                Implementation
               </div>
               <div style={{
                 fontSize: '14px',
-                color: 'var(--text-muted)'
+                color: 'var(--text-muted)',
+                marginTop: '8px'
               }}>
-                Implementation
+                No technical knowledge needed
               </div>
             </div>
           </div>
