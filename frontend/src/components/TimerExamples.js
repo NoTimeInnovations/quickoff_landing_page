@@ -98,6 +98,68 @@ const TimerExamples = () => {
     </div>
   );
 
+  const CompactTimer = () => (
+    <div style={{
+      background: 'rgba(0, 0, 0, 0.8)',
+      borderRadius: '20px',
+      padding: '6px 12px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '8px',
+      border: '1px solid var(--accent-primary)',
+      backdropFilter: 'blur(8px)'
+    }}>
+      <span style={{
+        fontSize: '10px',
+        color: 'var(--accent-primary)',
+        fontWeight: '600'
+      }}>
+        🔥
+      </span>
+      <div style={{
+        display: 'flex',
+        gap: '4px',
+        alignItems: 'center'
+      }}>
+        {[
+          formatTime(countdown.hours),
+          formatTime(countdown.minutes),
+          formatTime(countdown.seconds)
+        ].map((value, index) => (
+          <React.Fragment key={index}>
+            <span style={{
+              background: 'var(--accent-primary)',
+              color: 'var(--bg-primary)',
+              borderRadius: '4px',
+              padding: '2px 6px',
+              fontSize: '12px',
+              fontWeight: '700',
+              minWidth: '24px',
+              textAlign: 'center'
+            }}>
+              {value}
+            </span>
+            {index < 2 && (
+              <span style={{
+                color: 'var(--text-muted)',
+                fontSize: '10px'
+              }}>
+                :
+              </span>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+      <span style={{
+        fontSize: '9px',
+        color: 'var(--accent-primary)',
+        fontWeight: '600'
+      }}>
+        50% OFF
+      </span>
+    </div>
+  );
+
   return (
     <div style={{
       marginTop: '80px',
