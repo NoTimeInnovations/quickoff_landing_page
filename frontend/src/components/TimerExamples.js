@@ -502,7 +502,7 @@ const TimerExamples = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                marginTop: '24px'
+                position: 'relative'
               }}>
                 <div style={{
                   position: 'absolute',
