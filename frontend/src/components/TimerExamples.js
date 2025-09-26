@@ -413,12 +413,7 @@ const TimerExamples = () => {
               boxShadow: '0 0 20px rgba(218, 255, 1, 0.2)',
               position: 'relative'
             }}>
-              {/* Timer at top of card */}
-              <div style={{ padding: '12px 12px 0 12px' }}>
-                <TimerDisplay size="small" />
-              </div>
-
-              {/* Product Image */}
+              {/* Product Image with Absolute Timer */}
               <div style={{
                 background: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)',
                 height: '200px',
@@ -429,6 +424,16 @@ const TimerExamples = () => {
                 justifyContent: 'center',
                 position: 'relative'
               }}>
+                {/* Compact Timer - Positioned Absolutely */}
+                <div style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '8px',
+                  zIndex: 10
+                }}>
+                  <CompactTimer />
+                </div>
+
                 <div style={{
                   position: 'absolute',
                   top: '8px',
