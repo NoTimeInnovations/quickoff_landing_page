@@ -5,8 +5,8 @@ import { Clock, Twitter, Github, Mail, ExternalLink } from 'lucide-react';
 const Footer = () => {
   const footerLinks = {
     product: [
-      { name: 'Features', href: '#features' },
-      { name: 'Roadmap', href: '#coming-soon' },
+      { name: 'Features', href: '/#features' },
+      { name: 'Roadmap', href: '/#coming-soon' },
     ],
     legal: [
       { name: 'Privacy Policy', href: '/privacy-policy' },
@@ -54,7 +54,7 @@ const Footer = () => {
                 color: 'var(--text-primary)',
                 letterSpacing: '-0.01em'
               }}>
-                QuickOff
+                QuickOffTimers
               </span>
             </div>
 
@@ -287,7 +287,7 @@ const Footer = () => {
             fontSize: '14px',
             color: 'var(--text-muted)'
           }}>
-            © 2025 QuickOff. All rights reserved.
+            © 2025 QuickOffTimers. All rights reserved.
           </div>
           <div style={{
             fontSize: '14px',

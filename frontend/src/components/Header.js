@@ -41,7 +41,7 @@ const Header = () => {
               color: 'var(--text-primary)',
               letterSpacing: '-0.01em'
             }}>
-              QuickOff
+              QuickOffTimers
             </span>
           </div>
 

@@ -55,7 +55,7 @@ const LoadingScreen = () => {
         margin: '0 0 8px 0',
         letterSpacing: '-0.01em'
       }}>
-        QuickOff
+        QuickOffTimers
       </h1>
       
       {/* Tagline */}
