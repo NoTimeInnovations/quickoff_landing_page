@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <div style={{ background: 'var(--bg-primary)', minHeight: '100vh' }}>
       <Header />
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-8">QuickOffTimers Privacy Policy</h1>
           
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 mb-6">
@@ -18,12 +21,12 @@ const PrivacyPolicy = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-700 mb-4">
-                This Privacy Policy describes how our timer application ("we," "our," or "us") collects, 
+                This Privacy Policy describes how QuickOffTimers ("we," "our," or "us") collects, 
                 uses, and protects your information when you use our timer service. We are committed to 
                 protecting your privacy and ensuring the security of your personal data.
               </p>
               <p className="text-gray-700">
-                Our timer application is designed to help merchants create and manage countdown timers 
+                QuickOffTimers is designed to help merchants create and manage countdown timers 
                 for their online stores, enhancing customer engagement and driving sales through urgency 
                 and time-sensitive offers.
               </p>
@@ -34,13 +37,13 @@ const PrivacyPolicy = () => {
               
               <h3 className="text-xl font-medium text-gray-800 mb-3">2.1 Store Information</h3>
               <p className="text-gray-700 mb-4">
-                We collect basic store information necessary to provide our timer services, including:
+                We collect basic store information necessary to provide QuickOffTimers services, including:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
                 <li>Store URL and domain information</li>
-                <li>Store plan and subscription details</li>
-                <li>Store configuration settings</li>
+                <li>Store plan details</li>
                 <li>Store timezone and localization preferences</li>
+                <li>Existing Discounts details for timer data</li>
               </ul>
 
               <h3 className="text-xl font-medium text-gray-800 mb-3">2.2 Timer Data</h3>
@@ -54,7 +57,7 @@ const PrivacyPolicy = () => {
                 <li>Timer placement and positioning data</li>
               </ul>
 
-              <h3 className="text-xl font-medium text-gray-800 mb-3">2.3 Usage Analytics</h3>
+              {/* <h3 className="text-xl font-medium text-gray-800 mb-3">2.3 Usage Analytics</h3>
               <p className="text-gray-700 mb-4">
                 We collect anonymous usage data to improve our services:
               </p>
@@ -63,7 +66,7 @@ const PrivacyPolicy = () => {
                 <li>Performance metrics</li>
                 <li>Error logs and debugging information</li>
                 <li>App installation and update data</li>
-              </ul>
+              </ul> */}
             </section>
 
             <section className="mb-8">
@@ -72,11 +75,11 @@ const PrivacyPolicy = () => {
                 We use the collected information solely for the following purposes:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>Providing and maintaining our timer services</li>
+                <li>Providing and maintaining QuickOffTimers services</li>
                 <li>Processing timer configurations and displaying them on your store</li>
-                <li>Managing your subscription and billing</li>
+                <li>Managing your QuickOffTimers app subscription and billing</li>
                 <li>Providing customer support and technical assistance</li>
-                <li>Improving our application performance and features</li>
+                <li>Improving QuickOffTimers performance and features</li>
                 <li>Ensuring compliance with our terms of service</li>
               </ul>
             </section>
@@ -87,7 +90,7 @@ const PrivacyPolicy = () => {
               <h3 className="text-xl font-medium text-gray-800 mb-3">4.1 Data Minimization</h3>
               <p className="text-gray-700 mb-4">
                 We follow the principle of data minimization, collecting only the minimum amount of 
-                personal data required to provide our timer functionality. We do not collect customer 
+                personal data required to provide QuickOffTimers functionality. We do not collect customer 
                 personal information such as names, addresses, phone numbers, or email addresses.
               </p>
 
@@ -109,13 +112,13 @@ const PrivacyPolicy = () => {
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
                 <li>Store information: Retained while your subscription is active</li>
-                <li>Timer data: Retained for 30 days after timer expiration or deletion</li>
-                <li>Usage analytics: Retained for 12 months in anonymized form</li>
-                <li>Account data: Deleted within 30 days of account termination</li>
+                <li>Timer data: After timer expiration the data stays till deletion or deletion can immediately delete the data</li>
+                {/* <li>Usage analytics: Retained for 12 months in anonymized form</li> */}
+                <li>Account data: Deleted immediately after account termination</li>
               </ul>
             </section>
 
-            <section className="mb-8">
+            {/* <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Data Sharing and Third Parties</h2>
               <p className="text-gray-700 mb-4">
                 We do not sell, trade, or rent your personal information to third parties. We may share 
@@ -125,12 +128,12 @@ const PrivacyPolicy = () => {
                 <li>With your explicit consent</li>
                 <li>To comply with legal obligations or court orders</li>
                 <li>To protect our rights, property, or safety</li>
-                <li>With trusted service providers who assist in operating our platform (under strict confidentiality agreements)</li>
+                <li>With trusted service providers who assist in operating the QuickOffTimers platform (under strict confidentiality agreements)</li>
               </ul>
-            </section>
+            </section> */}
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Your Rights and Choices</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Your Rights and Choices</h2>
               <p className="text-gray-700 mb-4">
                 You have the following rights regarding your personal data:
               </p>
@@ -149,7 +152,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Compliance with Privacy Regulations</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Compliance with Privacy Regulations</h2>
               <p className="text-gray-700 mb-4">
                 Our privacy practices are designed to comply with applicable privacy laws and regulations, 
                 including but not limited to:
@@ -163,27 +166,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. International Data Transfers</h2>
-              <p className="text-gray-700 mb-4">
-                Your data may be transferred to and processed in countries other than your own. 
-                We ensure that such transfers comply with applicable data protection laws and 
-                implement appropriate safeguards, including standard contractual clauses and 
-                adequacy decisions.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Children's Privacy</h2>
-              <p className="text-gray-700 mb-4">
-                Our services are not intended for children under 13 years of age. We do not 
-                knowingly collect personal information from children under 13. If we become 
-                aware that we have collected personal information from a child under 13, 
-                we will take steps to delete such information.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Changes to This Privacy Policy</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Changes to This Privacy Policy</h2>
               <p className="text-gray-700 mb-4">
                 We may update this Privacy Policy from time to time. We will notify you of any 
                 material changes by posting the new Privacy Policy on this page and updating 
@@ -193,9 +176,9 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Contact Us</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Contact Us</h2>
               <p className="text-gray-700 mb-4">
-                If you have any questions about this Privacy Policy or our data practices, 
+                If you have any questions about this Privacy Policy or QuickOffTimers data practices, 
                 please contact us:
               </p>
               <div className="bg-gray-50 p-4 rounded-lg">
@@ -212,10 +195,10 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Data Protection Officer</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Data Protection Officer</h2>
               <p className="text-gray-700 mb-4">
                 For any data protection concerns or to exercise your rights under applicable 
-                privacy laws, you may contact our Data Protection Officer:
+                privacy laws, you may contact the QuickOffTimers Data Protection Officer:
               </p>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="text-gray-700 mb-2">

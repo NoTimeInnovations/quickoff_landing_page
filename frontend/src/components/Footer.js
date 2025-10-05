@@ -7,26 +7,9 @@ const Footer = () => {
     product: [
       { name: 'Features', href: '#features' },
       { name: 'Roadmap', href: '#coming-soon' },
-      { name: 'Pricing', href: '#' },
-      { name: 'Documentation', href: '#' }
-    ],
-    company: [
-      { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'Contact', href: '#' }
-    ],
-    support: [
-      { name: 'Help Center', href: '#' },
-      { name: 'Community', href: '#' },
-      { name: 'Status', href: '#' },
-      { name: 'API Docs', href: '#' }
     ],
     legal: [
       { name: 'Privacy Policy', href: '/privacy-policy' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
-      { name: 'GDPR', href: '#' }
     ]
   };
 
@@ -96,7 +79,7 @@ const Footer = () => {
             </a>
 
             {/* Social Links */}
-            <div style={{
+            {/* <div style={{
               display: 'flex',
               gap: '12px'
             }}>
@@ -182,7 +165,7 @@ const Footer = () => {
               >
                 <Mail size={18} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Product Links */}
@@ -202,89 +185,36 @@ const Footer = () => {
             }}>
               {footerLinks.product.map((link, index) => (
                 <li key={index} style={{ marginBottom: '12px' }}>
-                  <a 
-                    href={link.href}
-                    style={{
-                      fontSize: '14px',
-                      color: 'var(--text-muted)',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease'
-                    }}
-                    onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-                    onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company Links */}
-          <div>
-            <h4 style={{
-              fontSize: '16px',
-              fontWeight: '600',
-              color: 'var(--text-primary)',
-              marginBottom: '16px'
-            }}>
-              Company
-            </h4>
-            <ul style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: 0
-            }}>
-              {footerLinks.company.map((link, index) => (
-                <li key={index} style={{ marginBottom: '12px' }}>
-                  <a 
-                    href={link.href}
-                    style={{
-                      fontSize: '14px',
-                      color: 'var(--text-muted)',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease'
-                    }}
-                    onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-                    onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support Links */}
-          <div>
-            <h4 style={{
-              fontSize: '16px',
-              fontWeight: '600',
-              color: 'var(--text-primary)',
-              marginBottom: '16px'
-            }}>
-              Support
-            </h4>
-            <ul style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: 0
-            }}>
-              {footerLinks.support.map((link, index) => (
-                <li key={index} style={{ marginBottom: '12px' }}>
-                  <a 
-                    href={link.href}
-                    style={{
-                      fontSize: '14px',
-                      color: 'var(--text-muted)',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease'
-                    }}
-                    onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-                    onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
-                  >
-                    {link.name}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link
+                      to={link.href}
+                      style={{
+                        fontSize: '14px',
+                        color: 'var(--text-muted)',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
+                      onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
+                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={link.href}
+                      style={{
+                        fontSize: '14px',
+                        color: 'var(--text-muted)',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
+                      onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -318,6 +248,7 @@ const Footer = () => {
                       }}
                       onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
                       onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
+                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     >
                       {link.name}
                     </Link>

@@ -8,7 +8,7 @@ const Features = () => {
       title: 'Product Card Timers',
       description: 'Our flagship feature - add countdown timers directly to product cards where customers see them most. Perfect for flash sales and limited offers.',
       highlight: true,
-      status: 'Available'
+      status: 'Comming Soon'
     },
     {
       icon: Clock,
