@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Clock, Twitter, Github, Mail, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
       { name: 'API Docs', href: '#' }
     ],
     legal: [
-      { name: 'Privacy Policy', href: '#' },
+      { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Terms of Service', href: '#' },
       { name: 'Cookie Policy', href: '#' },
       { name: 'GDPR', href: '#' }
@@ -306,19 +307,35 @@ const Footer = () => {
             }}>
               {footerLinks.legal.map((link, index) => (
                 <li key={index} style={{ marginBottom: '12px' }}>
-                  <a 
-                    href={link.href}
-                    style={{
-                      fontSize: '14px',
-                      color: 'var(--text-muted)',
-                      textDecoration: 'none',
-                      transition: 'color 0.2s ease'
-                    }}
-                    onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-                    onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
-                  >
-                    {link.name}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link 
+                      to={link.href}
+                      style={{
+                        fontSize: '14px',
+                        color: 'var(--text-muted)',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
+                      onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={link.href}
+                      style={{
+                        fontSize: '14px',
+                        color: 'var(--text-muted)',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
+                      onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
