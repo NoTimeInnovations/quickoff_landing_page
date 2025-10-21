@@ -2,6 +2,65 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
+export const metadata = {
+  title: 'Privacy Policy - QuickOffTimers | Data Protection & Security',
+  description: 'QuickOffTimers Privacy Policy - Learn how we protect your data, ensure security, and comply with GDPR, CCPA, and other privacy regulations. Data minimization, encryption, and your rights.',
+  keywords: 'QuickOffTimers privacy policy, data protection, GDPR compliance, CCPA compliance, Shopify app privacy, data security, user rights, data minimization',
+  authors: [{ name: 'QuickOffTimers Team' }],
+  creator: 'QuickOffTimers',
+  publisher: 'INNOVIZE NOTIME PVT LTD',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://quickofftimers.com/privacy-policy',
+    siteName: 'QuickOffTimers',
+    title: 'Privacy Policy - QuickOffTimers | Data Protection & Security',
+    description: 'QuickOffTimers Privacy Policy - Learn how we protect your data, ensure security, and comply with GDPR, CCPA, and other privacy regulations.',
+    images: [
+      {
+        url: '/privacy-og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'QuickOffTimers Privacy Policy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy - QuickOffTimers | Data Protection & Security',
+    description: 'Learn how QuickOffTimers protects your data and ensures compliance with privacy regulations.',
+    images: ['/privacy-twitter-image.jpg'],
+    creator: '@quickofftimers',
+  },
+  alternates: {
+    canonical: 'https://quickofftimers.com/privacy-policy',
+  },
+  category: 'legal',
+  classification: 'Privacy Policy',
+  other: {
+    'application-name': 'QuickOffTimers',
+    'apple-mobile-web-app-title': 'QuickOffTimers Privacy',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'format-detection': 'telephone=no',
+    'mobile-web-app-capable': 'yes',
+    'msapplication-TileColor': '#00f0ff',
+    'msapplication-config': '/browserconfig.xml',
+    'theme-color': '#00f0ff',
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <div style={{ background: 'var(--bg-primary)', minHeight: '100vh' }}>
