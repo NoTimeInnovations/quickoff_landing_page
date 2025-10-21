@@ -72,7 +72,7 @@ const Footer = () => {
             </p>
 
             {/* Install Button */}
-            <a href="#" className="btn-primary" style={{
+            <a href="https://apps.shopify.com/quick-off-timers" className="btn-primary" style={{
               display: 'inline-flex',
               marginBottom: '24px'
             }}>

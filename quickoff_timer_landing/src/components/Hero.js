@@ -83,7 +83,7 @@ const Hero = () => {
             flexWrap: 'wrap'
           }}>
             <a 
-              href="#" 
+              href="https://apps.shopify.com/quick-off-timers" 
               className="btn-primary"
               style={{ fontSize: '18px', padding: '20px 40px' }}
             >

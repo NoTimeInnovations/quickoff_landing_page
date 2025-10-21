@@ -57,7 +57,7 @@ const Header = () => {
           }} className="desktop-nav">
             <a href="#features" className="btn-ghost">Features</a>
             <a href="#coming-soon" className="btn-ghost">Roadmap</a>
-            <a href="#" className="btn-primary">
+            <a href="https://apps.shopify.com/quick-off-timers" className="btn-primary">
               Install App
             </a>
           </nav>
